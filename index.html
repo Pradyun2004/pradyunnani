@@ -1,1 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+   
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            text-transform: capitalize;
+        
+        }
+    
+        footer{
+
+           height: 80px; 
+            text-align: center;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          background-color: black;
+          color:white
+        
+        }
+        img{
+            height: 300px;
+        }
+       
+        section{
+            display: flex;
+            align-items: center;
+            text-align: center;
+           justify-content: center;
+           flex-wrap: wrap;
+           /* grid-template-columns: auto auto; */
+        }
+        div{
+            margin: 20px;
+            border: 1px solid lightgrey;
+            padding: 10px;
+            line-height: 40px;
+            filter: drop-shadow(0 0 3px gray);
+        }
+        .price{
+            color: rgb(15, 11, 65);
+        }
+        button{
+            background-color: rgb(85, 223, 85);
+        }
+       label #bars{
+           
+            float: right;
+           line-height: 84px;
+           margin-right: 40px;
+           display: none;
+            
+            
+       }
+     
+        
+       @media screen and (max-width:500px){
+
+
+         section{
+            display: block;
+            position: none;
+         }
+         img{
+            width: auto;
+            height: 250px;
+         }
+        label #bars{
+
+              display: block;
+              
+
+
+         }
+         header nav ul{
+            display: none;
+         }
+         /* header{
+            background-color: aqua;
+
+         } */
+       
+       }
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: rgb(235, 233, 233);
+            color: rgb(24, 2, 2);
+            position: sticky;
+        }
+        .list{
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+            
+        }
+        ul li{
+            list-style: none;
+
+        }
+        a{
+            text-decoration: none;
+            color: rgb(24, 2, 2);
+        }
+     #toggle , label{
+            display: none;
+        }
+    @media (max-width:600px) {
+        .list{
+              width: 100%;
+              flex-direction: column;
+
+              align-items: center;
+              display: none;
+              flex-wrap: wrap;
+              padding-top: 20px;
+        }
+        label{
+            display: block;
+        }
+        #toggle:checked~.list{
+            display: flex;
+        }
+      
+    }
+    .contact{
+       
+        background-color: black;
+        color: white;
+
+    }
+
+    
+    
+    </style>
+</head>
+<body>
+    
+
+ <!-- <label for="">
+    <i class="fa fa-bars " id="bars"></i>
+ </label> -->
+
+ <!-- <header>
+       <h1> our online store</h1>
+
+       <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">my carts</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">my account</a></li>
+        </ul>
+      </nav>
+
+ </header> -->
+
+   <main>
+   <nav>
+
+       <div class="navbar">
+           
+       
+       <h2>pradyun's store</h2>
+       <input type="checkbox" id="toggle">
+        <label for="toggle"><i class="fa-solid fa-bars"></i></label>
+        <ul class="list">
+            <li><a href="">home</a></li>
+            <li><a href="">my carts</a></li>
+         <li><a href="">contact</a></li>
+         <li><a href="">my account</a></li>
+         
+        </ul>
+        
+        
+    </div>
+    
+</nav>
+    
+    
+     <section>
+       
+     
+        <div class="product1 ">
+
+         <img src="image.png" alt="">
+
+         <h2> product 1</h2>
+         <p class="price">$10.91</p>
+         <button>add to cart</button>
+
+
+
+        </div>
+        <div class="product2">
+            <img src="image.png" alt="">
+            <h2> product 2</h2>
+            <p class="price">$35.01</p>
+            <button>add to cart</button>
+
+
+        </div>
+   
+
+             
+             <div class="product3">
+                 <img src="image.png" alt="">
+                 <h2> product 3</h2>
+                 <p class="price">$101.08</p>
+                 <button>add to cart</button>
+                 
+                 
+                </div>
+                <div class="product4">
+                    
+                    <img src="image.png" alt="">
+                    <h2> product 4</h2>
+                    <p class="price">$17.91</p>
+                    <button>add to cart</button>
+                </div>
+                <div class="product5">
+                    
+                    <img src="image.png" alt="">
+                    <h2> product 5</h2>
+                    <p class="price">$17.1</p>
+                    <button>add to cart</button>
+                </div>
+                <div class="product6">
+                    
+                    <img src="image.png" alt="">
+                    <h2> product 6</h2>
+                    <p class="price">$16.91</p>
+                    <button>add to cart</button>
+                </div>
+                <div class="product7">
+                    
+                    <img src="image.png" alt="">
+                    <h2> product 7</h2>
+                    <p class="price">$10.4</p>
+                    <button>add to cart</button>
+                </div>
+                <div class="product8">
+                    
+                    <img src="image.png" alt="">
+                    <h2> product 9</h2>
+                    <p class="price">$17.91</p>
+                    <button>add to cart</button>
+                </div>
+                
+                
+            </section>
+
+            <div class="contact" >
+                   
+                   <p>contact: pradyunstore@gmail.com</p>
+                   <p>whatsapp: +91 9876543210</p>
+
+
+
+
+            </div>
+                
+              
+                
+
+   </main>
+
+
+
+ 
+   <footer>
+               <p>@ 2024 our online store. all rights reserved.</p>
+            
+   </footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+    
+
+
+
+
+
 
